@@ -3,6 +3,7 @@ class Api::V1::UploadsController < ApiController
 
     def index
         @uploads = @user.uploads
+        render json: @uploads
     end
 
     def create

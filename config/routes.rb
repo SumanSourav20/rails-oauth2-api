@@ -11,7 +11,7 @@ Rails.application.routes.draw do
       scope :users, module: :users do
         post '/', to: 'registrations#create', as: :user_registration
       end
-      resources :uploads, only: [:create]
+      resources :uploads, only: [:index,:create]
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
